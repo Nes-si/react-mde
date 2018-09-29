@@ -131,7 +131,7 @@ export function buildNewDraftState(currentState: EditorState, markdownState: Mar
 }
 
 export async function buildNewMdeState(currentState: MdeState, generateMarkdownPreview: GenerateMarkdownPreview, newText: string, newSelection: TextSelection = null): Promise<MdeState> {
-    const newDraftState = buildNewDraftState(currentState.draftEditorState, newText, newSelection);
+    const newDraftState = buildNewDraftState(currentState.draftEditorState, {text: newText, selection: newSelection});
     const html = generateMarkdownPreview ? await generateMarkdownPreview(newText) : "";
     return {
         html,
