@@ -4,6 +4,7 @@ export interface ReactMdePreviewProps {
     className?: string;
     previewRef?: (ref: MdePreview) => void;
     html: string;
+    emptyPreviewHtml: string;
 }
 export interface MdePreviewState {
 }

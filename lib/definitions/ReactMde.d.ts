@@ -12,6 +12,8 @@ export interface ReactMdeProps {
     generateMarkdownPreview?: GenerateMarkdownPreview;
     layout?: keyof LayoutMap;
     layoutOptions?: any;
+    emptyPreviewHtml?: string;
+    readOnly?: boolean;
 }
 export declare class ReactMde extends React.Component<ReactMdeProps> {
     static defaultProps: Partial<ReactMdeProps>;

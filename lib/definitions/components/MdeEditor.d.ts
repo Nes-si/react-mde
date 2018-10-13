@@ -8,6 +8,7 @@ export interface MdeEditorProps {
     onChange: (value: EditorState) => void;
     editorRef?: (ref: MdeEditor) => void;
     editorState: MdeState;
+    readOnly: boolean;
 }
 export declare class MdeEditor extends React.Component<MdeEditorProps, {}> {
     editorRef: Editor;

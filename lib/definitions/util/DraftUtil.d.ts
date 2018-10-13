@@ -10,3 +10,4 @@ export declare function buildSelectionState(contentState: ContentState, selectio
 export declare function getMarkdownStateFromDraftState(editorState: EditorState): MarkdownState;
 export declare function getMdeStateFromDraftState(editorState: EditorState, generateMarkdownPreview: GenerateMarkdownPreview): Promise<MdeState>;
 export declare function buildNewDraftState(currentState: EditorState, markdownState: MarkdownState): EditorState;
+export declare function buildNewMdeState(currentState: MdeState, generateMarkdownPreview: GenerateMarkdownPreview, newText: string, newSelection?: TextSelection): Promise<MdeState>;

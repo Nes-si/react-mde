@@ -1,11 +1,10 @@
-@import "variables";
+@import "variables.scss";
 
 * {
     box-sizing: border-box;
 }
 
 .react-mde {
-    height: 100%;
     border: 1px solid $mde-border-color;
     border-radius: $mde-border-radius;
 }

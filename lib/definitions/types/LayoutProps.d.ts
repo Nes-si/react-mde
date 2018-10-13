@@ -8,4 +8,6 @@ export interface LayoutProps {
     commands?: Command[][];
     layoutOptions: any;
     mdeEditorState: MdeState;
+    emptyPreviewHtml: string;
+    readOnly: boolean;
 }

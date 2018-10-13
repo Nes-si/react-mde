@@ -6,6 +6,7 @@ export interface HeaderItemDropdownProps {
     buttonProps: any;
     commands: Command[];
     onCommand: (command: Command) => void;
+    readOnly: boolean;
 }
 export interface HeaderItemDropdownState {
     open: boolean;

@@ -1,5 +1,4 @@
 .react-mde-vertical-layout {
-  height: 100%;
   display: flex;
   flex-direction: column; }
   .react-mde-vertical-layout .mde-tabs {
@@ -18,11 +17,13 @@
     display: flex;
     flex-direction: column; }
     .react-mde-vertical-layout .react-mde-content .mde-text {
-      overflow-y: auto;
-      height: 50%; }
+      min-height: 200px;
+      height: auto;
+      overflow-y: auto; }
     .react-mde-vertical-layout .react-mde-content .mde-preview {
+      min-height: 0;
+      height: auto;
       overflow-y: auto;
-      height: 50%;
       border-top: 1px solid #c8ccd0; }
     .react-mde-vertical-layout .react-mde-content .mde-text-only {
       height: 100%; }
