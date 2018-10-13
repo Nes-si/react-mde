@@ -1,0 +1,31 @@
+.react-mde-vertical-layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .react-mde-vertical-layout .mde-tabs {
+    display: flex;
+    align-items: stretch; }
+    .react-mde-vertical-layout .mde-tabs .mde-tab {
+      border: none;
+      border-left: 1px solid #c8ccd0;
+      padding: 10px;
+      background: none; }
+    .react-mde-vertical-layout .mde-tabs .mde-tab:hover {
+      cursor: pointer; }
+    .react-mde-vertical-layout .mde-tabs .mde-tab-activated {
+      background: white; }
+  .react-mde-vertical-layout .react-mde-content {
+    display: flex;
+    flex-direction: column; }
+    .react-mde-vertical-layout .react-mde-content .mde-text {
+      overflow-y: auto;
+      height: 50%; }
+    .react-mde-vertical-layout .react-mde-content .mde-preview {
+      overflow-y: auto;
+      height: 50%;
+      border-top: 1px solid #c8ccd0; }
+    .react-mde-vertical-layout .react-mde-content .mde-text-only {
+      height: 100%; }
+    .react-mde-vertical-layout .react-mde-content .mde-preview-only {
+      border-top: none;
+      height: 100%; }
