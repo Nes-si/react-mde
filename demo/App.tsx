@@ -36,9 +36,6 @@ export class App extends React.Component<{}, AppState> {
                 <ReactMde
                     onChange={this.handleValueChange}
                     layout="horizontal"
-                    layoutOptions={{
-                        displayToggleButtons: true,
-                    } as HorizontalLayoutOptions}
                     editorState={this.state.mdeState}
                     generateMarkdownPreview={(markdown) => Promise.resolve(this.converter.makeHtml(markdown))}
                 />
