@@ -31,19 +31,20 @@
 
         .mde-text {
             min-width: 50%;
+            flex-grow: 1;
             overflow-y: auto;
-            border-radius: 0px;
+            border-right: 1px solid $mde-border-color;
         }
 
         .mde-preview {
             min-width: 50%;
+            flex-grow: 1;
             padding: 10px;
-            border-left: 1px solid $mde-border-color;
             overflow-y: auto;
         }
 
-        .mde-preview-only {
-            border-left: none;
+        .mde-text-only {
+            border-right: none;
         }
     }
 }

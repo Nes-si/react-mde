@@ -298,15 +298,16 @@
     height: 100%; }
     .react-mde-horizontal-layout .mde-content .mde-text {
       min-width: 50%;
+      flex-grow: 1;
       overflow-y: auto;
-      border-radius: 0px; }
+      border-right: 1px solid #c8ccd0; }
     .react-mde-horizontal-layout .mde-content .mde-preview {
       min-width: 50%;
+      flex-grow: 1;
       padding: 10px;
-      border-left: 1px solid #c8ccd0;
       overflow-y: auto; }
-    .react-mde-horizontal-layout .mde-content .mde-preview-only {
-      border-left: none; }
+    .react-mde-horizontal-layout .mde-content .mde-text-only {
+      border-right: none; }
 
 .react-mde-tabbed-layout {
   height: 100%;
