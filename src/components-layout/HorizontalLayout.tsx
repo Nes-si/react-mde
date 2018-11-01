@@ -11,7 +11,7 @@ export interface HorizontalLayoutOptions {
 }
 
 const defaultLayoutOptions: HorizontalLayoutOptions = {
-    displayToggleButtons: false,
+    displayToggleButtons: true,
 };
 
 export class HorizontalLayout extends React.Component<LayoutProps, {}> {
